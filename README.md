@@ -1,4 +1,4 @@
-# Arduino123
+# Arduino123 v6
 Arduino and Electronics basics tuition
 
 This is just a repository of arduino code used for Arduino Primer classes presented by Stephan Roux.
