@@ -14,9 +14,15 @@ void setup() {
 void loop() {
   if (n<5){
     strip.setPixelColor(0 ,0,0,255);
+    strip.setPixelColor(1 ,0,0,255);
+    strip.setPixelColor(2 ,0,0,255);
+    strip.setPixelColor(3 ,0,0,255);
     strip.show();
     delay(300);
     strip.setPixelColor(0 ,0,0,0);
+    strip.setPixelColor(1 ,0,0,0);
+    strip.setPixelColor(2 ,0,0,0);
+    strip.setPixelColor(3 ,0,0,0);
     strip.show();
     delay(300);
     n++;
