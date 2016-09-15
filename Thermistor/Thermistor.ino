@@ -29,7 +29,7 @@ void loop() {
   if (numdif > 10) strip.setPixelColor(0,0,0,255);
   if (numdif > 30) strip.setPixelColor(1,0,0,255);
   if (numdif > 50) strip.setPixelColor(2,0,0,255);
-  if (numdif > 80) strip.setPixelColor(3,0,0,255);
+  if (numdif > 80) strip.setPixelColor(3,255,255,0);
 
   strip.show();
 

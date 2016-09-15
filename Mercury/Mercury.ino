@@ -9,7 +9,7 @@ char printstring;
 void setup() {
   Serial.begin(115200);
   strip.begin();
-  strip.setBrightness(50);
+  //strip.setBrightness(50);
   strip.show();
   pinMode(swpin,INPUT_PULLUP);
 
@@ -40,7 +40,7 @@ void loop() {
     }
 
   if ((tiltcount == 10)&&(lockstage == 1)){
-    strip.setPixelColor(1,0,0,255);
+    strip.setPixelColor(1,255,0,0);
     }
 
   if (lockstage == 2){
@@ -62,9 +62,9 @@ void loop() {
   if (lockstage == 3){
       if (lockstagecounter < (1000/loopdelay)){
           ++ lockstagecounter;
-          strip.setPixelColor(1,0,0,255);
-          strip.setPixelColor(2,0,0,255);
-          strip.setPixelColor(3,0,0,255);
+          strip.setPixelColor(1,0,255,0);
+          strip.setPixelColor(2,0,255,0);
+          strip.setPixelColor(3,0,255,0);
           }
       else {
             for (x=0;x<4;x++){
